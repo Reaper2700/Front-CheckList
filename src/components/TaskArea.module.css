@@ -4,38 +4,25 @@
     align-items: center;
     margin: 0;
     width: 100%;
-    /* ou a largura desejada, como 100px */
     margin-top: -3.52rem;
     max-width: 44rem;
 }
 
 .TaskForm textarea {
     width: 100%;
-    /* Largura total do contêiner */
     height: 3.25rem;
-    /* Altura fixa */
     border-radius: 5px;
-    /* Cantos arredondados */
     background-color: #262626;
-    /* Cor de fundo do textarea */
     border: none;
-    /* Remove a borda padrão */
     color: #ffffff;
-    /* Cor do texto */
     padding: 0.5rem;
-    /* Preenchimento interno */
     resize: none;
-    /* Impede o redimensionamento */
     font-size: 1rem;
-    /* Tamanho da fonte */
     line-height: 1.8;
-    /* Altura da linha */
-
 }
 
 .TaskForm textarea::placeholder {
     color: #808080;
-    /* cor do texto do placeholder */
 }
 
 .TaskForm button {

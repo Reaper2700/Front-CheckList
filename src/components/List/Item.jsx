@@ -1,13 +1,13 @@
-import { Check, Trash } from 'phosphor-react'; // Certifique-se de que esses ícones estão corretos
-import style from './Item.module.css'; // Certifique-se de que o caminho está correto
+import { Check, Trash } from 'phosphor-react';
+import style from './Item.module.css';
 
 export function Item({ data, removeTask, toggleTaskStatus }) {
-    // Função para alternar o status da tarefa
+    
     function handleTaskToggle() {
-        toggleTaskStatus(data.id); // Envia apenas o id, conforme esperado
+        toggleTaskStatus(data.id); 
     }
 
-    // Função para remover a tarefa
+    
     function handleRemove() {
         removeTask(data.id);
     }

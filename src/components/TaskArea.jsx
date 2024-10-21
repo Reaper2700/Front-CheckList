@@ -1,4 +1,3 @@
-import { PlusCircle } from 'phosphor-react';
 import style from './TaskArea.module.css';
 import { useState } from 'react';
 import { Empty } from './List/Empty';
@@ -9,12 +8,12 @@ export function TaskArea() {
     const [tasks, setTasks] = useState([]);
     const [completedTasks, setCompletedTasks] = useState([]);
 
-    
+
     function handleTaskChange(event) {
         setNewTask(event.target.value);
     }
 
-    
+
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -22,7 +21,7 @@ export function TaskArea() {
             return;
         }
 
-        
+
         const newTaskObject = {
             id: Date.now(),
             text: newTask,
@@ -33,19 +32,19 @@ export function TaskArea() {
         setNewTask('');
     }
 
-    
+
     function handleToggleTask(id) {
         const updatedTasks = tasks.map((task) =>
             task.id === id ? { ...task, completed: !task.completed } : task
         );
         setTasks(updatedTasks);
 
-        
+
         const completed = updatedTasks.filter((task) => task.completed);
         setCompletedTasks(completed);
     }
 
-    
+
     function handleRemoveTask(id) {
         if (!confirm('Deseja mesmo apagar essa tarefa?')) {
             return;
@@ -54,7 +53,7 @@ export function TaskArea() {
         const filteredTasks = tasks.filter((task) => task.id !== id);
         setTasks(filteredTasks);
 
-        
+
         const completed = filteredTasks.filter((task) => task.completed);
         setCompletedTasks(completed);
     }
