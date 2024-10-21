@@ -1,0 +1,26 @@
+.header{
+    background: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+    padding: 1rem;
+    
+}
+
+.header strong{
+    display: flex;
+    padding: 0.4rem;
+    justify-content: center;
+    line-height: 3rem;
+    width: 8rem;
+    font-size: 40px;
+}
+
+.blue{
+    color: #4EA8DE;
+}
+
+.purple{
+    color: #5E60CE;
+}

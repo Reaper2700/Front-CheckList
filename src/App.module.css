@@ -1,0 +1,25 @@
+.content{
+  max-width: 46rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.wrapper{
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+  .wrapper{
+      grid-template-columns: 1fr;
+      
+  }
+}
+

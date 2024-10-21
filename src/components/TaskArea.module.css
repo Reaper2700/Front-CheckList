@@ -1,0 +1,111 @@
+.TeskForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    /* ou a largura desejada, como 100px */
+    margin-top: -3.52rem;
+    max-width: 44rem;
+}
+
+.TeskForm textarea {
+    width: 100%;
+    /* Largura total do contêiner */
+    height: 3.25rem;
+    /* Altura fixa */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    background-color: #262626;
+    /* Cor de fundo do textarea */
+    border: none;
+    /* Remove a borda padrão */
+    color: #ffffff;
+    /* Cor do texto */
+    padding: 0.5rem;
+    /* Preenchimento interno */
+    resize: none;
+    /* Impede o redimensionamento */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.8;
+    /* Altura da linha */
+
+}
+
+.TeskForm textarea::placeholder {
+    color: #808080;
+    /* cor do texto do placeholder */
+}
+
+.TeskForm button {
+
+    width: 5.625rem;
+    height: 3.25rem;
+    background: #1E6F9F;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0 1rem;
+
+    margin-left: 0.5rem;
+    display: block;
+    color: #ffffff;
+
+    justify-content: space-between;
+
+}
+
+.container {
+    display: flex;
+    flex: 1;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.container aside {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-weight: bold;
+}
+
+.container aside:first-child {
+    color: #4EA8DE;
+}
+
+.container aside:last-child {
+    color: #8284FA;
+}
+
+.container aside {
+    font-size: 0.875rem;
+}
+
+.container aside span {
+    padding: 2px 8px;
+    border-radius: 16px;
+
+    font-size: 0.75rem;
+
+    color: #d9d9d9;
+    background-color: #333333;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 4px;
+}
+
+.taskList>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 4px;
+}
