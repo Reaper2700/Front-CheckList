@@ -1,4 +1,4 @@
-.TeskForm {
+.TaskForm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     max-width: 44rem;
 }
 
-.TeskForm textarea {
+.TaskForm textarea {
     width: 100%;
     /* Largura total do contêiner */
     height: 3.25rem;
@@ -33,20 +33,20 @@
 
 }
 
-.TeskForm textarea::placeholder {
+.TaskForm textarea::placeholder {
     color: #808080;
     /* cor do texto do placeholder */
 }
 
-.TeskForm button {
+.TaskForm button {
 
     width: 5.625rem;
     height: 3.25rem;
     background: #1E6F9F;
     font-weight: bold;
     border-radius: 8px;
-    padding: 0 1rem;
-
+    
+    
     margin-left: 0.5rem;
     display: block;
     color: #ffffff;

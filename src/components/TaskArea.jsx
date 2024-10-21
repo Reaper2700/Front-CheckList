@@ -64,7 +64,7 @@ export function TaskArea() {
 
     return (
         <div>
-            <form className={style.TeskForm} onSubmit={handleSubmit}>
+            <form className={style.TaskForm} onSubmit={handleSubmit}>
                 <textarea
                     name="comment"
                     placeholder="Adicionar uma nova tarefa"
@@ -73,7 +73,7 @@ export function TaskArea() {
                 />
 
                 <button type="submit">
-                    Criar <PlusCircle size={16} color="#f2f2f2" weight="bold" />
+                    Criar
                 </button>
             </form>
 
